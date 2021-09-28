@@ -24,7 +24,7 @@ def get_date(timezone):
     return datetime.datetime.now(tz = tz).strftime("%m/%d/%Y, %H:%M:%S")
 #Url and PyCharm connection is made here.
 def get_weather(city) :
-    api_address = "https://api.openweathermap.org/data/2.5/weather?appid=a34e3ec31b819c7f38d61701645d72e6&q=" #bu link openweathermapten alinir, key dahil
+    api_address = "https://api.openweathermap.org/data/2.5/weather?appid=a34e3ec31b819c7f38d61701645d72e6&q=" 
     url = api_address + city
     response = requests.get(url)
 #Here are the specific values I pulled from the site.
